@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gods Own Nursing Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Gods Own Nursing Agency Logo" />
+      <h1>Gods Own Nursing Agency</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Professional Nursing Care, Where You Need It Most</h2>
+    <p>Bringing compassionate, expert care to homes and hospitals across Nigeria.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      GODS OWN NURSING AGENCY is a trusted healthcare provider offering qualified,
+      professional nurses for home care, hospital support, and private health
+      services in Nigeria and surrounding areas. We prioritize safety,
+      compassion, and excellence in every service we provide.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Home Nursing Care</li>
+      <li>Hospital Support Services</li>
+      <li>Private Elderly Care</li>
+      <li>Post-Surgery Care</li>
+      <li>24/7 Emergency Nursing</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="slider">
+      <div class="slide active">
+        <blockquote>
+          "Gods Own Nursing Agency provided excellent care for my father after
+          surgery. Highly recommended!"
+          <footer>- Mrs. Adewale, Sango Ota</footer>
+        </blockquote>
+      </div>
+      <div class="slide">
+        <blockquote>
+          "Professional, caring, and always on time. Their nurses are truly
+          God-sent."
+          <footer>- Mr. Olu, Ifo</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> <a href="tel:08140221668">08140221668</a></p>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:godsownnursingagency@gmail.com"
+        >godsownnursingagency@gmail.com</a
+      >
+    </p>
+    <p><strong>Location:</strong> Ota, Ogun State, Nigeria</p>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps?q=Ota,+Ogun+State,+Nigeria&output=embed"
+        width="100%"
+        height="300"
+        style="border:0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </section>
+
+  <a
+    href="https://wa.me/2348140221668"
+    class="whatsapp-button"
+    target="_blank"
+    title="Chat on WhatsApp"
+  >
+    &#128222;
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Gods Own Nursing Agency. All rights reserved.</p>
+    <p>
+      <a href="#" style="color: #fff; text-decoration: underline">Back to top</a>
+    </p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
+
+    setInterval(() => {
+      slides[currentSlide].classList.remove("active");
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add("active");
+    }, 5000);
+  </script>
+</body>
+</html>
