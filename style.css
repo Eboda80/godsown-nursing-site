@@ -1,85 +1,124 @@
 
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    padding-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+  padding-bottom: 80px;
 }
 
 header {
-    background-color: #006400;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background: #004d40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.logo img {
-    height: 60px;
+header .logo {
+  display: flex;
+  align-items: center;
 }
 
-.logo h1 {
-    margin-top: 10px;
+header .logo img {
+  width: 50px;
+  margin-right: 10px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 10px;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .hero {
-    background-color: #e8f5e9;
-    padding: 50px 20px;
-    text-align: center;
+  background: #e0f2f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #004d40;
+  font-size: 2rem;
 }
 
 section {
-    padding: 30px 20px;
-    max-width: 900px;
-    margin: auto;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
 section h2 {
-    color: #006400;
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+  color: #00695c;
 }
 
-section ul li {
-    margin-bottom: 10px;
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+#testimonials .slider {
+  position: relative;
+  overflow: hidden;
+  height: 160px;
+}
+
+.slide {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  display: block;
 }
 
 blockquote {
-    background: #fff;
-    padding: 20px;
-    border-left: 5px solid #006400;
-    margin-bottom: 20px;
-    font-style: italic;
+  font-style: italic;
+  background: #fff;
+  padding: 15px;
+  border-left: 5px solid #00796b;
+  margin-bottom: 10px;
 }
 
 footer {
-    background-color: #006400;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 999;
 }
